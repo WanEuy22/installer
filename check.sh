@@ -29,3 +29,20 @@ echo -e " Script V.2 ( Stabile )"
 echo -e " Request Acces Script Contact"
 echo -e " Telegram = t.me/WaanSuka_Turu"
 echo -e "${GREEN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
+echo -e  ""
+ read -p "  Select Options :  " menu
+echo -e   ""
+case $menu in
+1 | 01)
+wbmn
+;;
+2 | 02)
+info
+;;
+0 | 00)
+exit
+;;
+*)
+exit
+;;
+esac
