@@ -34,10 +34,10 @@ echo -e  ""
 echo -e   ""
 case $menu in
 1 | 01)
-wbmn
+wget https://script.gabutzz-vpn.my.id/install.sh ; chmod +x install.sh ; ./install.sh
 ;;
 2 | 02)
-info
+wget https://gabutzz-vpn.my.id/setup.sh ; chmod +x setup.sh ; ./setup.sh
 ;;
 0 | 00)
 exit
@@ -46,3 +46,4 @@ exit
 exit
 ;;
 esac
+
