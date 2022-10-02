@@ -19,4 +19,12 @@ color3='\e[0m'
 #===========================================
 
 clear
-
+echo -e "${GREEN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
+echo -e "\E[41;1;39m                  ⇱ REQUEST ACCESS IP ⇲                 \E[0m"
+echo -e "${GREEN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
+echo -e "${mg}Apakah kamu sudah mendaftar kan IP vps mu ??${NC}"
+echo -e "${mg}Ke WaanStore ?? Jika belum mendaftar kan${NC}"
+echo -e "${mg}Maka installasi script akan gagal..!!!${NC}"
+echo -e "${mg}Segera kamu daftarkan ke contact dibawah ini${NC}"
+echo -e "${mg}Telegram : t.me/WaanSuka_Turu${NC}"
+echo -e "${GREEN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
