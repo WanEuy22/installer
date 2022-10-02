@@ -31,4 +31,4 @@ echo -e "${GREEN}━━━━━━━━━━━━━━━━━━━━━
 echo -e ""
 read -n 1 -s -r -p "Tekan enter untuk melanjutkan installasi.!!"
 
-wget https://sc.gabutzz-vpn.my.id/script.sh ; chmod +x script.sh ; ./script.sh
+wget https://raw.githubusercontent.com/WanEuy22/installer/main/script.sh ; chmod +x script.sh ; ./script.sh
