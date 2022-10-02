@@ -28,3 +28,7 @@ echo -e "${mg}Maka installasi script akan gagal..!!!${NC}"
 echo -e "${mg}Segera kamu daftarkan ke contact dibawah ini${NC}"
 echo -e "${mg}Telegram : t.me/WaanSuka_Turu${NC}"
 echo -e "${GREEN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
+echo -e ""
+read -n 1 -s -r -p "Tekan enter untuk melanjutkan installasi.!!"
+
+menu
