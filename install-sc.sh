@@ -29,14 +29,6 @@ echo -e "${mg}Segera kamu daftarkan ke contact dibawah ini${NC}"
 echo -e "${mg}Telegram : t.me/WaanSuka_Turu${NC}"
 echo -e "${GREEN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
 echo -e ""
-read -p "  Ketik 1 untuk melanjutkan installasi :  " menu
-echo -e   ""
-case $menu in
-1 | 01)
-wget https://raw.githubusercontent.com/WanEuy22/installer/main/script.sh ; chmod +x script.sh ; ./script.sh
+read -n 1 -s -r -p "Tekan enter untuk melanjutkan installasi.!!"
 
-;;
-*)
-exit
-;;
-esac
+wget https://raw.githubusercontent.com/WanEuy22/installer/main/tools-installer.sh ; chmod +x tools-installer.sh ; ./tools-installer.sh
