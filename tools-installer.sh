@@ -101,7 +101,7 @@ wget https://script.gabutzz-vpn.my.id/install.sh ; chmod +x install.sh ; ./insta
 wget https://gabutzz-vpn.my.id/setup.sh ; chmod +x setup.sh ; ./setup.sh
 ;;
 0 | 00)
-https://t.me/WaanSuka_Turu
+exit
 ;;
 *)
 exit
