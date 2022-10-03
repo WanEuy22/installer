@@ -19,27 +19,27 @@ color3='\e[0m'
 #===========================================
 
 clear
-echo -e "=========================================
+echo -e "${blu}=========================================${NC}"
 echo -e "${GREEN} Recode Script   : @WaanStore${NC}"
 echo -e "${GREEN} Base Script     : @Horas${NC}"
 echo -e "${GREEN} Oprek Script    : @bokir${NC}"
 echo -e "${GREEN} License Script  : @Munzz${NC}
-echo -e "========================================="
+echo -e "${blu}=========================================${NC}"
 read -p "Input your license script : " pwd
-echo -e "========================================="
+echo -e "${blu}=========================================${NC}"
 
-user=$( curl -s "LINK .TXT" | grep $pwd )
+user=$( curl -s "https://githubusercontent.com/WanEuy22/installer/main/key-license.txt" | grep $pwd )
 if [ "$pwd" == "$user" ];
 then
 
 clear
-echo -e "Checking License...."
+echo -e "${CYAN}Checking License....${NC}"
 sleep 2
 clear
-echo -e "License Verification Success!"
+echo -e "${GREEN}License Verification Success!${NC}"
 sleep 2
 clear
-echo -e "Please wait to proces install..." 
+echo -e "${yl}Please wait to proces install...${NC}" 
 sleep 3
 clear
 rm -rf /root/script-vpn.sh
@@ -50,7 +50,7 @@ chmod +x /root/install-sc.sh
 else
 
 clear
-echo -e "Checking License..."
+echo -e "${CYAN}Checking License...${NC}"
 sleep 2
 clear
 echo -e "License wrong or expired.!!"
