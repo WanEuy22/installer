@@ -20,10 +20,10 @@ color3='\e[0m'
 
 clear
 echo -e "${blu}=========================================${NC}"
-echo -e "${GREEN} Recode Script   ${PURPLE}=${NC} @WaanStore${NC}"
-echo -e "${GREEN} Base Script     ${PURPLE}=${NC} @Horas${NC}"
-echo -e "${GREEN} Oprek Script    ${PURPLE}=${NC} @bokir${NC}"
-echo -e "${GREEN} License Script  ${PURPLE}=${NC} @Munzz${NC}"
+echo -e "${GREEN} Recode Script   ${PURPLE}=${NC} ${GREEN}@WaanStore${NC}"
+echo -e "${GREEN} Base Script     ${PURPLE}=${NC} ${GREEN}@Horas${NC}"
+echo -e "${GREEN} Oprek Script    ${PURPLE}=${NC} ${GREEN}@bokir${NC}"
+echo -e "${GREEN} License Script  ${PURPLE}=${NC} ${GREEN}@Munzz${NC}"
 echo -e "${blu}=========================================${NC}"
 read -p "Input your license script : " pwd
 echo -e "${blu}=========================================${NC}"
