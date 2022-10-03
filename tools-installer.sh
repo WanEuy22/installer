@@ -87,7 +87,7 @@ echo -e "${GREEN}━━━━━━━━━━━━━━━━━━━━━
 echo -e "\E[41;1;39m                ⇱ MENU TOOLS INSTALLER ⇲                \E[0m"
 echo -e "${GREEN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
 echo -e "[${GREEN}01${NC}] ${PURPLE}•${NC} Install Script V.1 ( MultiPort )"
-echo -e "[${GREEN}02${NC}] ${PURPLE}•${NC} Install Script V.2 ( Stabile )"
+echo -e "[${GREEN}02${NC}] ${PURPLE}•${NC} Install Script V.2 ( Standard )"
 echo -e "[${GREEN}00${NC}] ${PURPLE}•${NC} Exit"
 echo -e "${GREEN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
 echo -e  ""
@@ -101,7 +101,7 @@ wget https://script.gabutzz-vpn.my.id/install.sh ; chmod +x install.sh ; ./insta
 wget https://gabutzz-vpn.my.id/setup.sh ; chmod +x setup.sh ; ./setup.sh
 ;;
 0 | 00)
-exit
+https://t.me/WaanSuka_Turu
 ;;
 *)
 exit
