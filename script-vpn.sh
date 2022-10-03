@@ -28,7 +28,7 @@ echo -e "${blu}=========================================${NC}"
 read -p "Input your license script : " pwd
 echo -e "${blu}=========================================${NC}"
 
-user=$( curl -s "https://githubusercontent.com/WanEuy22/installer/main/key-license.txt" | grep $pwd )
+user=$( curl -s "https://raw.githubusercontent.com/WanEuy22/installer/main/key-license.txt" | grep $pwd )
 if [ "$pwd" == "$user" ];
 then
 
