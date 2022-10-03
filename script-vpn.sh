@@ -53,12 +53,12 @@ clear
 echo -e "${CYAN}Checking License...${NC}"
 sleep 2
 clear
-echo -e "License wrong or expired.!!"
+echo -e "\E[41;1;39m License wrong or expired.!!\E[0m"
 sleep 2
 clear
-echo -e "License Expired or wrong, then the script installation failed.."
+echo -e "\E[41;1;39m License Expired or wrong, then the script installation failed..\E[0m"
 sleep 2
-echo -e "Contact admin to get license.."
+echo -e "${GREEN}Contact admin to get license..${NC}"
 rm -rf /root/script-vpn.sh
 exit
 
