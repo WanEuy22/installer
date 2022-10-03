@@ -23,7 +23,7 @@ echo -e "${blu}=========================================${NC}"
 echo -e "${GREEN} Recode Script   : @WaanStore${NC}"
 echo -e "${GREEN} Base Script     : @Horas${NC}"
 echo -e "${GREEN} Oprek Script    : @bokir${NC}"
-echo -e "${GREEN} License Script  : @Munzz${NC}
+echo -e "${GREEN} License Script  : @Munzz${NC}"
 echo -e "${blu}=========================================${NC}"
 read -p "Input your license script : " pwd
 echo -e "${blu}=========================================${NC}"
