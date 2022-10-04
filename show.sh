@@ -53,25 +53,25 @@ export IP=$( curl -s https://ipinfo.io/ip/ )
 # // SSH Websocket Proxy
 ssh_ws=$( systemctl status ws-epro | grep Active | awk '{print $3}' | sed 's/(//g' | sed 's/)//g' )
 if [[ $ssh_ws == "running" ]]; then
-    status_ws="${GREEN}ON${NC}"
+    status_ws="${GREEN}AKTIF${NC}"
 else
-    status_ws="${GREEN}ON${NC}"
+    status_ws="${GREEN}AKTIF${NC}"
 fi
 
 # // nginx
 nginx=$( systemctl status nginx | grep Active | awk '{print $3}' | sed 's/(//g' | sed 's/)//g' )
 if [[ $nginx == "running" ]]; then
-    status_nginx="${GREEN}ON${NC}"
+    status_nginx="${GREEN}AKTIF${NC}"
 else
-    status_nginx="${RED}OFF${NC}"
+    status_nginx="${RED}ERROR${NC}"
 fi
 
 # // SSH Websocket Proxy
 xray=$(/etc/init.d/ssh status | grep Active | awk '{print $3}' | cut -d "(" -f2 | cut -d ")" -f1)
 if [[ $xray == "running" ]]; then
-    status_xray="${GREEN}ON${NC}"
+    status_xray="${GREEN}AKTIF${NC}"
 else
-    status_xray="${RED}OFF${NC}"
+    status_xray="${RED}ERROR${NC}"
 fi
 
 
@@ -79,36 +79,28 @@ clear
 clear
 clear
 clear
-echo -e "${BLUE}╒════════════════════════════════════════════╕\033[0m${NC}"
-echo -e "\E[41;1;39m            ⇱ INFORMASI VPS ⇲              \E[0m"
-echo -e "${BLUE}╘════════════════════════════════════════════╛\033[0m${NC}"
+echo -e "${BLUE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
+echo -e "\E[41;1;39m                     ⇱ MENU INFORMATION ⇲                     \E[0m"
+echo -e "${BLUE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
 
-echo -e "Sever Uptime        ${PURPLE}=${NC} $( uptime -p  | cut -d " " -f 2-10000 ) "
 echo -e "Current Time        ${PURPLE}=${NC} $( date -d "0 days" +"%d-%m-%Y | %X" )"
 echo -e "Operating System    ${PURPLE}=${NC} $( cat /etc/os-release | grep -w PRETTY_NAME | sed 's/PRETTY_NAME//g' | sed 's/=//g' | sed 's/"//g' ) ( $( uname -m) )"
 echo -e "Current Domain      ${PURPLE}=${NC} $( cat /etc/xray/domain )"
 echo -e "Server IP           ${PURPLE}=${NC} ${IP}"
-echo -e "Recode Script       ${PURPLE}=${NC} WaanStore"
 
 echo -e "${BLUE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
-echo -e "\E[41;1;39m                     ⇱ STATUS LAYANAN ⇲                       \E[0m"
-echo -e "${BLUE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
 echo -e ""
-echo -e " [ SSH Websocket : ${status_ws} ]     [ XRAY : ${status_xray} ]      [ NGINX : ${status_nginx} ]"
+echo -e " [ SSH WEBSOCKET : ${status_ws} ]     [ XRAY : ${status_xray} ]      [ NGINX : ${status_nginx} ]"
 echo -e ""
 echo -e "${BLUE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
-echo -e "\E[41;1;39m                      ⇱ MENU LAYANAN ⇲                        \E[0m"
-echo -e "${BLUE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
 echo -e ""
-echo -e " [${GREEN}01${NC}]${PURPLE} •${NC} ${YELLOW}Menu SSH WS${NC}             [${GREEN}07${NC}]${PURPLE} •${NC} ${YELLOW}Status Layanan${NC}"
-echo -e " [${GREEN}02${NC}]${PURPLE} •${NC} ${YELLOW}Menu VMESS${NC}              [${GREEN}08${NC}]${PURPLE} •${NC} ${YELLOW}SpeedTest VPS${NC}"
-echo -e " [${GREEN}03${NC}]${PURPLE} •${NC} ${YELLOW}Menu TROJAN${NC}             [${GREEN}09${NC}]${PURPLE} •${NC} ${YELLOW}Change Banner SSH${NC}"
-echo -e " [${GREEN}04${NC}]${PURPLE} •${NC} ${YELLOW}Menu SS WS${NC}              [${GREEN}10${NC}]${PURPLE} •${NC} ${YELLOW}Renew Certificate${NC}"
-echo -e " [${GREEN}05${NC}]${PURPLE} •${NC} ${YELLOW}Add New Domain${NC}          [${GREEN}11${NC}]${PURPLE} •${NC} ${YELLOW}Cek Spek VPS${NC}"
-echo -e " [${GREEN}06${NC}]${PURPLE} •${NC} ${YELLOW}Reboot Your VPS${NC}         [${GREEN}12${NC}]${PURPLE} •${NC} ${YELLOW}Restart Service${NC}"
+echo -e " [${GREEN}01${NC}]${PURPLE} •${NC} Client SSH-WS              [${GREEN}07${NC}]${PURPLE} •${NC} Status Layanan"
+echo -e " [${GREEN}02${NC}]${PURPLE} •${NC} Client VMESS-WS            [${GREEN}08${NC}]${PURPLE} •${NC} SpeedTest VPS"
+echo -e " [${GREEN}03${NC}]${PURPLE} •${NC} Client TROJAN-WS           [${GREEN}09${NC}]${PURPLE} •${NC} Change Banner SSH"
+echo -e " [${GREEN}04${NC}]${PURPLE} •${NC} Client SS-WS               [${GREEN}10${NC}]${PURPLE} •${NC} Renew Certificate"
+echo -e " [${GREEN}05${NC}]${PURPLE} •${NC} Add New Domain             [${GREEN}11${NC}]${PURPLE} •${NC} Cek Spek VPS"
+echo -e " [${GREEN}06${NC}]${PURPLE} •${NC} Reboot Your VPS            [${GREEN}12${NC}]${PURPLE} •${NC} Restart Service"
 echo -e ""
-echo -e "${BLUE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
-echo -e "\E[41;1;39m                    ⇱ SCRIPT SSH & XRAY ⇲                     \E[0m"
 echo -e "${BLUE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
 echo -e " ${CYAN}Client Name${NC}    ${PURPLE}=${NC} ${CYAN}Testing Script${NC}"
 echo -e " ${CYAN}Kategori${NC}       ${PURPLE}=${NC} ${CYAN}Free Script${NC}"
