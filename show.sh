@@ -79,35 +79,36 @@ clear
 clear
 clear
 clear
-echo -e "${YELLOW}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
-echo -e "\E[41;1;39m                    ⇱ MENU INFORMATION ⇲                    \E[0m"
-echo -e "${YELLOW}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
+echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
+echo -e "\E[41;1;39m                      ⇱ MENU INFORMATION ⇲                     \E[0m"
+echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
 
 echo -e " Current Time        ${PURPLE}= ${NC} $( date -d "0 days" +"%d-%m-%Y | %X" )"
 echo -e " Operating System    ${PURPLE}= ${NC} $( cat /etc/os-release | grep -w PRETTY_NAME | sed 's/PRETTY_NAME//g' | sed 's/=//g' | sed 's/"//g' ) ( $( uname -m) )"
 echo -e " Current Domain      ${PURPLE}= ${NC} $( cat /etc/xray/domain )"
 echo -e " Current IP VPS      ${PURPLE}= ${NC} ${IP}"
 
-echo -e "${YELLOW}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
+echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
 echo -e ""
 echo -e " [ SSH-WS : ${status_ws} ]    [ XRAY : ${status_xray} ]     [ NGINX : ${status_nginx} ]"
 echo -e ""
-echo -e "${YELLOW}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
+echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
 echo -e ""
-echo -e " [${GREEN}01${NC}]${PURPLE} •${NC} Client SSH-WS            [${GREEN}07${NC}]${PURPLE} •${NC} Status Layanan"
-echo -e " [${GREEN}02${NC}]${PURPLE} •${NC} Client VMESS-WS          [${GREEN}08${NC}]${PURPLE} •${NC} SpeedTest VPS"
-echo -e " [${GREEN}03${NC}]${PURPLE} •${NC} Client TROJAN-WS         [${GREEN}09${NC}]${PURPLE} •${NC} Change Banner SSH"
-echo -e " [${GREEN}04${NC}]${PURPLE} •${NC} Client SS-WS             [${GREEN}10${NC}]${PURPLE} •${NC} Renew Certificate"
-echo -e " [${GREEN}05${NC}]${PURPLE} •${NC} Add New Domain           [${GREEN}11${NC}]${PURPLE} •${NC} Cek Spek VPS"
-echo -e " [${GREEN}06${NC}]${PURPLE} •${NC} Reboot Your VPS          [${GREEN}12${NC}]${PURPLE} •${NC} Restart Service"
+echo -e " (${GREEN}01${NC})${PURPLE} •${NC} Client SSH-WS            (${GREEN}07${NC})${PURPLE} •${NC} Status Layanan"
+echo -e " (${GREEN}02${NC})${PURPLE} •${NC} Client VMESS-WS          (${GREEN}08${NC})${PURPLE} •${NC} SpeedTest VPS"
+echo -e " (${GREEN}03${NC})${PURPLE} •${NC} Client TROJAN-WS         (${GREEN}09${NC})${PURPLE} •${NC} Change Banner SSH"
+echo -e " (${GREEN}04${NC})${PURPLE} •${NC} Client SS-WS             (${GREEN}10${NC})${PURPLE} •${NC} Renew Certificate"
+echo -e " (${GREEN}05${NC})${PURPLE} •${NC} Add New Domain           (${GREEN}11${NC})${PURPLE} •${NC} Cek Spek VPS"
+echo -e " (${GREEN}06${NC})${PURPLE} •${NC} Reboot Your VPS          (${GREEN}12${NC})${PURPLE} •${NC} Restart Service"
 echo -e ""
-echo -e "${YELLOW}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
+echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
 echo -e " Client Name    ${PURPLE}=${NC} Script 443/80"
 echo -e " Kategori       ${PURPLE}=${NC} Free Script"
 echo -e " Script Update  ${PURPLE}=${NC} V.3"
-echo -e " Fix Script By  ${PURPLE}=${NC} Waan Store"
-echo -e " Regis IP       ${PURPLE}=${NC} t.me/WaanSuka_Turu"
-echo -e "${YELLOW}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
+echo -e " Fix Script By  ${PURPLE}=${NC} WaanStore"
+echo -e " Base Script    ${PURPLE}=${NC} Horass
+echo -e " Oprek Script   ${PURPLE}=${NC} @boootzzzzz
+echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
 
 echo -e ""
 
