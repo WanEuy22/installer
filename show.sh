@@ -79,9 +79,9 @@ clear
 clear
 clear
 clear
-echo -e "${BLUE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
-echo -e "\E[41;1;39m                     ⇱ INFORMASI VPS ⇲                        \E[0m"
-echo -e "${BLUE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
+echo -e "${BLUE}╒════════════════════════════════════════════╕\033[0m${NC}"
+echo -e "\E[41;1;39m            ⇱ INFORMASI VPS ⇲              \E[0m"
+echo -e "${BLUE}╘════════════════════════════════════════════╛\033[0m${NC}"
 
 echo -e "Sever Uptime        ${PURPLE}=${NC} $( uptime -p  | cut -d " " -f 2-10000 ) "
 echo -e "Current Time        ${PURPLE}=${NC} $( date -d "0 days" +"%d-%m-%Y | %X" )"
