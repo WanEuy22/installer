@@ -379,8 +379,8 @@ kernelku=$(uname -r)
 # DNS PATCH
 #tipeos2=$(uname -m)
 
-# GETTING DOMAIN NAME
-IP=$(curl -s ipinfo.io/ip )
+clear
+IPVPS=$(curl -s ipinfo.io/ip )
 tram=$( free -m | awk 'NR==2 {print $2}' )
 uram=$( free -m | awk 'NR==2 {print $3}' )
 Domen="$(cat /etc/xray/domain)"
@@ -388,7 +388,7 @@ echo -e "${PURPLE}━━━━━━━━━━━━━━━━━━━━�
 echo -e "${GREEN}»${NC} Total Storage      = $(df -h / | awk '{print $2}' | tail -n1 | sed 's/G//g' | sed 's/ //g') GB"
 echo -e "${GREEN}»${NC} Available Storage  = $(df -h / | awk '{print $4}' | tail -n1 | sed 's/G//g' | sed 's/ //g') GB"
 echo -e "${GREEN}»${NC} Current Domain     = $Domen"
-echo -e "${GREEN}»${NC} Server IP          = $IP"
+echo -e "${GREEN}»${NC} Server IP          = $IPVPS"
 echo -e "${GREEN}»${NC} Total Ram          = $tram MB, Used $uram MB"
 echo -e "${PURPLE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
 echo -e "\E[41;1;39m               ⇱ Status Layanan ⇲               \E[0m"
